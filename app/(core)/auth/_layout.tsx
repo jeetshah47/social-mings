@@ -1,16 +1,17 @@
-import { Stack } from 'expo-router';
-import React from 'react';
+import { Stack } from "expo-router";
+import React from "react";
 
 export default function TabLayout() {
   return (
     <Stack
       screenOptions={{
-        headerShown: false
-      }}>
+        headerShown: false,
+      }}
+    >
       <Stack.Screen
         name="signin"
         options={{
-          title: 'Home',
+          title: "Home",
         }}
       />
     </Stack>
