@@ -1,6 +1,8 @@
 import {
+  NativeSyntheticEvent,
   StyleSheet,
   TextInput,
+  TextInputFocusEventData,
   TextInputProps,
   View,
   type ViewProps,
@@ -10,20 +12,27 @@ import { useThemeColor } from "@/hooks/useThemeColor";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { useRef, useState } from "react";
 
-export type ThemedInputProps = TextInputProps;
+export type ThemedInputProps = TextInputProps & {
+  onFocusOut?: () => void;
+};
 
-export function ThemedInput({ style, ...otherProps }: ThemedInputProps) {
+export function ThemedInput({
+  style,
+  onFocusOut,
+  ...otherProps
+}: ThemedInputProps) {
   const colorScheme = useColorScheme();
   const [isFocus, setIsFocus] = useState(false);
   const ref = useRef<TextInput>(null);
 
-  const handleFocus = () => {
+  const handleFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
     console.log(ref.current?.isFocused());
 
     if (ref.current?.isFocused()) {
       setIsFocus(true);
     } else {
       setIsFocus(false);
+      onFocusOut && onFocusOut();
     }
   };
 
