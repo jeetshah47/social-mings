@@ -14,7 +14,7 @@ import { router } from "expo-router";
 
 export default function HomeScreen() {
   const singUpNavigate = () => {
-    router.replace("/(core)/dashboard")
+    router.replace("/(core)/setup")
   }
   return (
     <ImageBackground
