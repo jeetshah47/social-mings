@@ -17,7 +17,8 @@ export default function Dashboard() {
     <ThemedView style={styles.container}>
       <ThemedText type="title">Good Morning</ThemedText>
       <ThemedText>{new Date().toDateString()}</ThemedText>
-      <View style={styles.divider} />
+      <View style={styles.divider}  />
+      <ThemedText type="subtitle" style={{paddingBottom: 15}}>Your Daily Stats</ThemedText>
       <ThemedView>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           {card.map((data) => (

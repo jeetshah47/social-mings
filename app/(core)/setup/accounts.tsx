@@ -22,14 +22,14 @@ export default function Accounts() {
   const [current, setCurrent] = useState("");
 
   const handleFetchData = async () => {
-    fetch(
-      `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&forHandle=${query}&key=${apiKey}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setSuggestion(data.items);
-      })
-      .catch((error) => console.error("Error:", error));
+    // fetch(
+    //   `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&forHandle=${query}&key=${apiKey}`
+    // )
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setSuggestion(data.items);
+    //   })
+    //   .catch((error) => console.error("Error:", error));
   };
 
   const handleNavigateNext =() => {

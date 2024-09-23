@@ -31,7 +31,7 @@ export default function CustomDashCard({ field }: DashCardProps) {
     if (field === "youtube") {
       try {
         const result = await getYoutubeDataByField("forHandle", "breakingbad");
-        console.log(result.items);
+        console.log("und",result);
         setData({
           title: "Youtube",
           icon: require("@/assets/images/youtube.png"),
