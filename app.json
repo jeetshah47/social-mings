@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jsdeveloper.socialmings"
     },
     "android": {
       "adaptiveIcon": {
@@ -31,6 +32,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "25d78454-b5dd-469a-a37f-16f53e53f7a7"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/25d78454-b5dd-469a-a37f-16f53e53f7a7"
     }
   }
 }
