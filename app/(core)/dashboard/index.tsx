@@ -4,6 +4,7 @@ import { ThemedView } from "@/components/ThemedView";
 import { Image, ScrollView, StyleSheet, View } from "react-native";
 import CustomDashCard from "./customcard";
 import { useState } from "react";
+import ContentReached from "./charts/content";
 
 export default function Dashboard() {
   const [card, setCard] = useState([
@@ -14,7 +15,8 @@ export default function Dashboard() {
   ]);
 
   return (
-    <ThemedView style={styles.container}>
+    <ScrollView style={styles.container}>
+    <ThemedView >
       <ThemedText type="title">Good Morning</ThemedText>
       <ThemedText>{new Date().toDateString()}</ThemedText>
       <View style={styles.divider}  />
@@ -25,8 +27,13 @@ export default function Dashboard() {
             <CustomDashCard field={data} key={data} />
           ))}
         </ScrollView>
+        <ThemedView style={{paddingVertical: 16, gap: 16}}>
+          <ThemedText type="subtitle">Statistics</ThemedText>
+          <ContentReached />
+        </ThemedView>
       </ThemedView>
     </ThemedView>
+    </ScrollView>
   );
 }
 
