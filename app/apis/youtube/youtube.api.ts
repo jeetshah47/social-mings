@@ -11,5 +11,6 @@ export const getYoutubeDataByField = async (
   const response = await fetch(
     `https://www.googleapis.com/youtube/v3/channels?part=statistics&${field}=${query}&key=${apiKey}`
   );
+  
   return response.json();
 };

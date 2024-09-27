@@ -14,13 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jeetshahajwa.socialmings"
+      "bundleIdentifier": "com.jsdeveloper.socialmings"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jsdeveloper.socialmings"
     },
     "web": {
       "bundler": "metro",
