@@ -20,11 +20,11 @@ interface DataProps {
 
 export default function CustomDashCard({ field }: DashCardProps) {
   const [data, setData] = useState<DataProps>({
-    baseData: "",
-    icon: require("@/assets/images/adaptive-icon.png"),
-    key: "",
-    title: "",
-    value: "",
+    baseData: "100K",
+    icon: require("@/assets/images/youtube.png"),
+    key: "Subscribers",
+    title: "Youtube",
+    value: "10",
   });
 
   const handleCallApi = async () => {
@@ -50,7 +50,7 @@ export default function CustomDashCard({ field }: DashCardProps) {
   };
 
   useEffect(() => {
-    handleCallApi();
+    // handleCallApi();
   }, []);
 
   return (

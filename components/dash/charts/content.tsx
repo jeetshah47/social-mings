@@ -36,7 +36,7 @@ export default function ContentReached() {
         </View>
         <View style={styles.contries}>
           {percentages.map((cont) => (
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <View key={cont.country} style={{ flexDirection: "row", alignItems: "center" }}>
               <ThemedText key={cont.country} style={{ width: "25%" }}>
                 {cont.country}
               </ThemedText>

@@ -2,9 +2,9 @@ import Card from "@/components/common/Card";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { Image, ScrollView, StyleSheet, View } from "react-native";
-import CustomDashCard from "./customcard";
+import CustomDashCard from "@/components/dash/customcard";
 import { useState } from "react";
-import ContentReached from "./charts/content";
+import ContentReached from "@/components/dash/charts/content";
 
 export default function Dashboard() {
   const [card, setCard] = useState([
