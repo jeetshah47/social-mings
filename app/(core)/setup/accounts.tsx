@@ -1,9 +1,9 @@
 import { YoutubeData } from "@/app/types/YoutubeInterface";
 import { numbersToWords } from "@/app/utils/numbetToWord";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedInput } from "@/components/ThemeInput";
-import { ThemedPressable } from "@/components/ThemePressable";
+import { ThemedText } from "@/components/base/ThemedText";
+import { ThemedView } from "@/components/base/ThemedView";
+import { ThemedInput } from "@/components/base/ThemeInput";
+import { ThemedPressable } from "@/components/base/ThemePressable";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { useEffect, useState } from "react";
 import {

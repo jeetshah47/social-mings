@@ -1,6 +1,6 @@
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedPressable } from "@/components/ThemePressable";
+import { ThemedText } from "@/components/base/ThemedText";
+import { ThemedView } from "@/components/base/ThemedView";
+import { ThemedPressable } from "@/components/base/ThemePressable";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { useEffect, useRef, useState } from "react";
 import {

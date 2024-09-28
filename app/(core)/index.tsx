@@ -7,14 +7,14 @@ import {
   Pressable,
 } from "react-native";
 
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedPressable } from "@/components/ThemePressable";
+import { ThemedText } from "@/components/base/ThemedText";
+import { ThemedView } from "@/components/base/ThemedView";
+import { ThemedPressable } from "@/components/base/ThemePressable";
 import { router } from "expo-router";
 
 export default function HomeScreen() {
   const singUpNavigate = () => {
-    router.replace("/(core)/(dashboard)/")
+    router.replace("/(core)/explore")
   }
   return (
     <ImageBackground

@@ -1,7 +1,7 @@
 import HorizontalBar from "@/components/Bar/HorizontalBar";
 import ChartCard from "@/components/common/ChartCard";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedText } from "@/components/base/ThemedText";
+import { ThemedView } from "@/components/base/ThemedView";
 import { StyleSheet, View } from "react-native";
 
 export default function ContentReached() {

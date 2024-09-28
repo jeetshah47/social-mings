@@ -1,5 +1,5 @@
 import { DimensionValue, StyleSheet } from "react-native";
-import { ThemedView } from "../ThemedView";
+import { ThemedView } from "../base/ThemedView";
 
 type ChartCardProps = {
   width: DimensionValue | undefined;

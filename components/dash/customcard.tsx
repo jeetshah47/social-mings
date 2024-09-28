@@ -1,8 +1,8 @@
 import { getYoutubeDataByField } from "@/app/apis/youtube/youtube.api";
 import { numbersToWords } from "@/app/utils/numbetToWord";
 import Card from "@/components/common/Card";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedText } from "@/components/base/ThemedText";
+import { ThemedView } from "@/components/base/ThemedView";
 import { useEffect, useState } from "react";
 import { Image, ImageSourcePropType } from "react-native";
 
