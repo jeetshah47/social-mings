@@ -8,7 +8,8 @@ export type ThemedViewProps = ViewProps & {
 };
 
 export function ThemedView({ style, lightColor, darkColor, ...otherProps }: ThemedViewProps) {
-  const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
+  const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor ? darkColor : "transparent" }, 'background');
 
   return <View style={[{ backgroundColor }, style]} {...otherProps} />;
 }
+import Feather from '@expo/vector-icons/Feather';

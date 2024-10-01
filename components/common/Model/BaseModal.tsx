@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   modal: {
     padding: 24,
     backgroundColor: "#202325",
+    width: "100%"
   },
   downGesture: {
     width: 56,

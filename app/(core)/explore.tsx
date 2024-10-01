@@ -8,6 +8,8 @@ import BaseModal from "@/components/common/Model/BaseModal";
 import { ThemedPressable } from "@/components/base/ThemePressable";
 import { ThemedText } from "@/components/base/ThemedText";
 import { useState } from "react";
+import SortModal from "@/components/common/Model/SortModal";
+import FilterModal from "@/components/common/Model/FilterModal";
 
 export default function TabTwoScreen() {
   const [showBox, setShowBox] = useState(false);
@@ -19,7 +21,15 @@ export default function TabTwoScreen() {
       >
         <ThemedText>Delete Item</ThemedText>
       </ThemedPressable>
-      <DeleteModal show={showBox} />
+      {/* <DeleteModal show={showBox} /> */}
+      {/* <SortModal show={showBox} title="Sort" options={[
+        "Custom",
+        "Relevance",
+        "Most recent",
+        "Lowest price",
+        "Highest price",
+      ]} /> */}
+      <FilterModal show={showBox} title="Filter" />
     </ThemedView>
   );
 }
@@ -27,7 +37,7 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 24,
+    // paddingHorizontal: 24,
     paddingTop: 56,
     justifyContent: "center",
     alignItems: "center",
